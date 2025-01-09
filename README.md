@@ -11,7 +11,7 @@ Currently, two official plugins are available:
 [Access Frontend APP](https://value-glance-frontend.vercel.app/)
 
 By default, the backend is configured to allow requests only from the deployed frontend (`https://value-glance-frontend.vercel.app`) and from any local `localhost` domains.
-If you want to modify the CORS policy to allow requests from other domains, you can update the `CORS` configuration in the backend code.
+If you want to change it, get a clone of the backend [BackendRepo](https://github.com/Jessica-IX/ValueGlance-backend) and modify the CORS policy to allow requests from other domains.
 
 ## Run Locally
 1. Clone the repository:
