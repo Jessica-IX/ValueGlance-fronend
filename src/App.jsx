@@ -116,7 +116,7 @@ const App = () => {
       {/* Filter Inputs*/}
       <div className="mb-4 bg-gray-100 text-black flex flex-wrap justify-center border border-collapse border-gray-200">
         <div className="flex justify-center">
-        <label className="font-bold">
+        <label className="font-bold flex items-center">
           Year Range:
           <span className="inline-flex items-center whitespace-nowrap">
             <input
@@ -139,7 +139,7 @@ const App = () => {
         </div>
 
         <div className="flex justify-center">
-        <label className="font-bold">
+        <label className="font-bold flex items-center">
           Revenue:
           <span className="inline-flex items-center whitespace-nowrap">
             <input
@@ -162,7 +162,7 @@ const App = () => {
         </div>
 
         <div className="flex justify-center">
-        <label className="font-bold text-black">
+        <label className="font-bold text-black flex items-center">
           Net Income:
           <span className="inline-flex items-center whitespace-nowrap">
           <input
