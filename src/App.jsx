@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 const currentYear = new Date().getFullYear();
+//const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
 const App = () => {
   // State for data, loading, filters, and sorting
@@ -18,7 +19,8 @@ const App = () => {
 
   // Fetch data from backend
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/get_income-statement")
+    //fetch(`${BACKEND_URL}/get_income-statement`)
+    fetch(`https://valueglance-backend.vercel.app/get_income-statement`)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -84,8 +86,8 @@ const App = () => {
     queryParams.set('order', sortBy.order);
 
     // Send GET request to backend API
-    fetch(`http://127.0.0.1:5000/filter?${queryParams.toString()}`)
-      .then((response) => response.json())
+    fetch(`https://valueglance-backend.vercel.app/filter?${queryParams.toString()}`)
+    .then((response) => response.json())
       .then((data) => {
         setData(data);
       })
