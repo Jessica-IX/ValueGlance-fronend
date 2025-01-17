@@ -15,10 +15,10 @@ const App = () => {
     column: "date",
     order: "des",
   });
-
+    
   // Fetch data from backend
   useEffect(() => {
-    fetch(`${BACKEND_URL}/get_income-statement`)
+    fetch(`https://valueglance-backend.vercel.app/get_income-statement`)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
